@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy — Tithi</title>
-<meta name="description" content="The privacy policy for Tithi, a Jain panchang and Jinvani library. The app collects nothing.">
+<meta name="description" content="The privacy policy for Tithi, a Jain panchang and Jinvani library. Nothing is collected unless you turn it on.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
 </header>
 
 <h1 style="font-size:1.5rem;margin:0 0 .5rem">Privacy policy</h1>
-<p class="sub">Last updated 17 September 2026.</p>
+<p class="sub">Last updated 26 September 2026.</p>
 
-<p class="lede">Tithi does not collect your data. There is no account to make, nothing is
-sent to us, and the app works with every permission denied.</p>
+<p class="lede">Tithi collects nothing about you unless you turn it on. There is no account to
+make, and the app works with every permission denied. Two things are optional and off until you
+switch them on: news from us, and limited usage data. Both are described below.</p>
 
 <div class="card">
-<strong>The short version.</strong> No accounts. No ads. No analytics, tracking or
-advertising SDKs of any kind. No data about you leaves your phone. The calendar is computed
-on your device from data built into the app, so it works in airplane mode from the first
-launch.
+<strong>The short version.</strong> No accounts. No ads. No tracking, no advertising
+identifiers. Your tradition, your city, your location and your birth details never leave your
+phone. The calendar is computed on your device from data built into the app, so it works in
+airplane mode from the first launch. Usage data and news are shared only if you turn them on.
 </div>
 
 <h2>What the app stores, and where</h2>
@@ -40,6 +41,10 @@ never uploaded, and it is deleted when you uninstall the app.</p>
 <tr><td>Your language, and display preferences</td><td>To show the app the way you set it</td></tr>
 <tr><td>Reminders you create</td><td>To schedule them on your device</td></tr>
 <tr><td>Jaap counts, and anything you mark</td><td>To keep your own count between sessions</td></tr>
+<tr><td>Your birth details, if you save them</td><td>To show your own chart</td></tr>
+<tr><td>Notes you save under <em>Report a wrong date</em></td><td>So you can read them back and send them yourself</td></tr>
+<tr><td>Niyam you mark, texts you save, and reading settings</td><td>To keep them between sessions</td></tr>
+<tr><td>Which features you have used, and which suggestion cards you have dismissed</td><td>To decide which card, if any, to show on Today</td></tr>
 </table>
 
 <p>Your tradition is a religious belief. Both app stores, the GDPR and India's DPDP Act treat
@@ -49,21 +54,49 @@ that as a sensitive category, and the app is built so that it never leaves your 
 <h2>Location</h2>
 
 <p>The app asks for location only if you tap <em>Use my current location</em>, and never at launch. It
-asks for <strong>approximate</strong> location, only while the app is open. The position is
-used once to find the nearest city in the list built into the app, and then discarded — only
-the city is kept. The app never requests background location, and it works fully if you refuse:
+asks for <strong>approximate</strong> location, only while the app is open. If you allow it, the
+app checks your approximate position when it opens, so that sunrise and the pachchakkhan times are
+right where you are. The position is used only while the app is running; it is never saved and
+never sent anywhere. The app never requests background location, and it works fully if you refuse:
 you can pick your city from a list instead.</p>
 
 <h2>Notifications</h2>
 
 <p>Reminders are scheduled by your phone, on your phone. No server is involved, nothing about
-a reminder is sent anywhere, and the app asks for notification permission only after you set
-a reminder — never at launch. Refusing it leaves every other part of the app working.</p>
+a reminder is sent anywhere, and the app asks for notification permission the first time you open
+Reminders, or when you turn on reminders or Tithi updates — never at launch. Refusing it leaves every other part of the app working.</p>
+
+<p><strong>Tithi updates &amp; announcements</strong> (optional, off until you turn it on in
+Reminders). Occasional news from us, such as new features or festival greetings, delivered by
+Google's Firebase Cloud Messaging. No push token exists until you turn it on. Turning it on gives
+your install a push token and subscribes it to one topic for the app's language (English, Hindi or
+Gujarati). Every phone on that topic gets the same message: we keep no list of devices and cannot
+send to you individually. Turning it off unsubscribes your phone and deletes the push token.
+Firebase also creates an installation ID on your phone the first time updates are turned on; it
+stays on your phone after you turn them off.</p>
 
 <h2>The network</h2>
 
-<p>The released app makes <strong>no network requests</strong>. It does not hold the Android
-internet permission.</p>
+<p>The calendar, the texts and the tirth pages never use the network. The app holds the
+Android internet permission only for the two optional features above and below; with both off, it
+makes no requests of its own. (Google Play services may still keep its own connection on your
+phone, as it does for every app.)</p>
+
+<h2>Usage data (optional)</h2>
+
+<p>Off unless you turn on <strong>Share limited usage data</strong> on the app's Privacy screen.
+The app never asks for it during setup. When on, it sends Google Firebase Analytics which screens
+and features you open (for example, "opened the Kundali tool"), that the app started, that a
+reminder was created or a notification was opened, that a suggestion card on Today was shown or
+tapped, and the app's language. A screen is sent as its
+kind, never its contents: "a day page", not which day.</p>
+
+<p>It never sends your tradition, sect or gaccha, your city or location, your birth details, or
+anything you type. It collects no advertising identifier, does not record which link, campaign or store page
+brought you to the app, and is not used for advertising, for tracking you across apps, or for
+building a profile of you. Google's own SDK also records basic
+facts such as the app version, the device model and a coarse region, and a random ID for your
+install. Turning the switch off stops collection at once and deletes that ID from your phone.</p>
 
 <p>A future version may download corrected calendar data — if an advisor rules that a date
 should change, that correction needs a way to reach phones between store releases. When that
@@ -75,24 +108,28 @@ follow, and your tradition, city and location are never placed in a request.</p>
 
 <ul>
 <li>No advertising, and no advertising identifiers.</li>
-<li>No analytics or crash-reporting SDK. Crash information, if any, comes only from
-    Google Play and Apple's own developer consoles, in aggregate, and never identifies you.</li>
+<li>No analytics unless you turn it on, as described above, and no crash-reporting SDK.
+    Crash information, if any, comes only from Google Play and Apple's own developer consoles,
+    in aggregate, and never identifies you.</li>
 <li>No tracking across apps or websites. The app never shows the App Tracking Transparency
     prompt, because it has nothing to ask for.</li>
-<li>No selling or sharing of data, because there is none to sell or share.</li>
+<li>No selling of data, and no sharing beyond Google processing the two optional features
+    for us.</li>
 <li>No third-party content loaded at runtime. Even this page loads no fonts, scripts or
     images from anywhere else.</li>
 </ul>
 
 <h2>Children</h2>
 
-<p>Tithi is not directed at children under 13, and collects no data from anyone, of any age.</p>
+<p>Tithi is not directed at children under 13, and collects no data from anyone unless the
+optional features above are turned on.</p>
 
 <h2>Your rights</h2>
 
-<p>Because nothing is collected, there is nothing for us to show you, correct, export or
-delete. Everything the app stores is on your device and under your control: clear the app's
-data, or uninstall it, and it is gone.</p>
+<p>Everything the app stores is on your device and under your control: clear the app's data, or
+uninstall it, and it is gone. Turning off usage data deletes the install's analytics ID; the
+data already sent is linked to no name, account or contact detail, and Google keeps it for
+two months, after which it is deleted.</p>
 
 <h2>Changes</h2>
 
